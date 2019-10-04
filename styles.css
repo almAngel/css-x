@@ -1,0 +1,72 @@
+@import url(/home/estudiante/Escritorio/p-css/normalize.css);
+.outlined {
+  -webkit-box-shadow: 0 0 0px 1px #3d3d3d;
+          box-shadow: 0 0 0px 1px #3d3d3d;
+}
+
+.shadowed-l {
+  -webkit-box-shadow: 0 0 4px 0.01rem #3d3d3d;
+          box-shadow: 0 0 4px 0.01rem #3d3d3d;
+}
+
+.shadowed-m {
+  -webkit-box-shadow: 0 0 6px 0.01rem #3d3d3d;
+          box-shadow: 0 0 6px 0.01rem #3d3d3d;
+}
+
+.shadowed-h {
+  -webkit-box-shadow: 0 0 8px 0.01rem #3d3d3d;
+          box-shadow: 0 0 8px 0.01rem #3d3d3d;
+}
+
+.glow, .button:hover, .button--color-main:hover, .input:focus {
+  -webkit-box-shadow: 0 0 8px 0.01rem #33CC33;
+          box-shadow: 0 0 8px 0.01rem #33CC33;
+  -webkit-transition: -webkit-box-shadow 300ms linear;
+  transition: -webkit-box-shadow 300ms linear;
+  transition: box-shadow 300ms linear;
+  transition: box-shadow 300ms linear, -webkit-box-shadow 300ms linear;
+}
+
+.rounded {
+  border-radius: .2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button, .button--color-main {
+  width: 100%;
+  padding: 1em 2em 1em 2em;
+  border: none;
+  cursor: pointer;
+}
+
+.button--color-main {
+  background-color: #33CC33;
+}
+
+.button.color-main, .color-main.button--color-main {
+  background-color: #33CC33;
+}
+
+.button:focus, .button--color-main:focus {
+  border: none;
+  outline: 0;
+  -webkit-box-shadow: 0 0 2px #33CC33 inset;
+          box-shadow: 0 0 2px #33CC33 inset;
+}
+
+.input {
+  width: 100%;
+  padding: .5em 0 .5em 0;
+  font-size: 100%;
+  color: #828282;
+  border: 1px solid #c2c2c2;
+}
+
+.input:focus {
+  outline: none;
+}
+/*# sourceMappingURL=styles.css.map */

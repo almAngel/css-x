@@ -1,0 +1,34 @@
+
+.button {
+    width: 100%;
+    padding: 1em 2em 1em 2em;
+    border: none;
+    cursor: pointer;
+    &--color-main {
+        @extend .button;
+        background-color: $color_main;
+    }
+    &.color-main {
+        background-color: $color_main;
+    }
+    &:hover {
+        @extend .glow;
+    }
+    &:focus {
+        border:none;
+        outline:0;
+        box-shadow: 0 0 2px $color_main inset;
+    }
+}
+
+.input {
+    width: 100%;
+    padding: .5em 0 .5em 0;
+    font-size: 100%;
+    color: $color_gray;
+    border: 1px solid $color_lightgray;
+    &:focus {
+        outline: none;
+        @extend .glow;
+    }
+}
