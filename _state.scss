@@ -1,0 +1,44 @@
+.outlined {
+  box-shadow: 0 0 0px 1px rgb(61, 61, 61);
+}
+.shadowed-l {
+  box-shadow: 0 0 4px .01rem rgb(61, 61, 61);
+}
+.shadowed-m {
+  box-shadow: 0 0 6px .01rem rgb(61, 61, 61);
+}
+.shadowed-h {
+  box-shadow: 0 0 8px .01rem rgb(61, 61, 61);
+}
+.glow {
+  box-shadow: 0 0 10px -.01rem $color_main;
+  transition: box-shadow 300ms ease;
+}
+.rounded {
+  border-radius: 0.2em;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-weight-light {
+  font-weight: 100;
+}
+
+@mixin padded-y($n) {
+  padding: $n+em 0 $n+em 0; 
+}
+@mixin padded-x($n) {
+  padding: 0 $n+em 0 $n+em;
+}
+@mixin padded($n) {
+  padding: $n+em $n+em $n+em $n+em; 
+}
+@mixin margin($n) {
+  margin: $n+em $n+em $n+em $n+em; 
+}

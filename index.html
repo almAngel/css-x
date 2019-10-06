@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,64 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
-    <button class="button--color-main rounded">My Button</button>
-    <input type="text" class="input rounded">
-    <p class="text-center"></p>
-</body>
-</html>
 
+<body>
+    <div class="paper-wrapper" style="position: fixed; height: 100%;">
+        <div class="paper--lighter"></div>
+    </div>
+
+    <header class="header paper-wrapper">
+        <div class="paper--light"></div>
+        <span class="header__brand">
+            <a href="" class="text--altfont light text-left color-main">Pixcrate.<span class="symbol">®</span></a>
+        </span>
+    </header>
+    <div class="container-fluid paper-wrapper" style="padding-top: 4%; padding-bottom: 4%;">
+
+        <!--
+        <div class="row no-gutters">
+            <div class="col-sm-12">
+                <div class="group--padded-1y">
+                    <p class="text--mainfont text-upper text-center color-main heading">Join Pixcrate community
+                        today</p>
+                    <p class="text--mainfont text-upper text-center dull">Create and share with your friends, or
+                        follow your favourite artist while growing as an independent artist</p>
+                    <p class="text--mainfont text-upper text-center dull">...or even build your own design team.</p>
+                    <p class="text--mainfont text-upper text-center color-main">Use the powerful image edition tool
+                        Pixcrate provides to you, the <span class="text--altfont bold">PIXCRATE EDITOR</span></p>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <div class="row no-gutters group--padded-2y">
+            <div class="col-xl-5"></div>
+            <div class="col-xl-2 col-sm-12">
+                <form method="get" action="" class="form__group padded-1">
+                    <span class="text--altfont form__head color-main">Register</span>
+                    <div class="input-group">
+                        <span class="input-group__help text--altfont dull">Insert a valid username or email</span>
+                        <input type="text" class="input-group__input rounded" autocomplete="on">
+                        <span class="input-group__hint text--mainfont dull">eg: Example/ example@example.com</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group__help text--altfont dull">Insert a valid password</span>
+                        <input type="password" class="input-group__input rounded" autocomplete="off">
+                    </div>
+                    <input type="button" class="button--color-main glow rounded" value="Register">
+                </form>
+            </div>
+            <div class="col-xl-5"></div>
+        </div>
+    </div>
+    <footer class="footer paper-wrapper">
+        <div class="paper--light"></div>
+        <div class="footer__social-links">
+            <a href="" class="text--mainfont text-upper text-center dull">Linkedin</a>
+            <a href="" class="text--mainfont text-upper text-center dull">Github</a>
+            <a href="" class="text--mainfont text-upper text-center dull">Bitbucket</a>
+        </div>
+    </footer>
+</body>
+
+</html>
