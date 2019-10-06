@@ -19,11 +19,6 @@ body {
 }
 
 @font-face {
-  font-family: Roboto sans-serif;
-  src: url("./fonts/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
   font-family: Open_Sans sans-serif;
   src: url("./fonts/Open_Sans/OpenSans-Regular.ttf");
 }
@@ -2544,8 +2539,8 @@ html {
 }
 
 .glow, .button:hover, .button--color-main:hover, .input-group__input:focus {
-  -webkit-box-shadow: 0 0 10px -0.01rem #33CC33;
-          box-shadow: 0 0 10px -0.01rem #33CC33;
+  -webkit-box-shadow: 0 0 12px 0 #33CC33;
+          box-shadow: 0 0 12px 0 #33CC33;
   -webkit-transition: -webkit-box-shadow 300ms ease;
   transition: -webkit-box-shadow 300ms ease;
   transition: box-shadow 300ms ease;
@@ -2568,8 +2563,8 @@ html {
   text-align: right;
 }
 
-.text-weight-light, .text.light, .light.text--mainfont, .light.text--altfont {
-  font-weight: 100;
+.text-weight-light {
+  font-weight: lighter;
 }
 
 .button, .button--color-main {
@@ -2577,7 +2572,7 @@ html {
   padding: 1em 1.5em 1em 1.5em;
   border: none;
   cursor: pointer;
-  font-family: Roboto sans-serif;
+  font-family: "Roboto" sans-serif;
   margin: 1em 0 1em 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2685,12 +2680,19 @@ html {
 }
 
 .text--altfont {
-  font-family: Roboto sans-serif;
+  font-family: "Roboto" sans-serif;
+}
+
+.text.margin-2, .margin-2.text--mainfont, .margin-2.text--altfont {
+  margin: 2em 2em 2em 2em;
+}
+
+.text.padded-1, .padded-1.text--mainfont, .padded-1.text--altfont {
+  padding: 1em 1em 1em 1em;
 }
 
 .text.heading, .heading.text--mainfont, .heading.text--altfont {
   font-size: 4em;
-  margin: 0;
 }
 
 .text.text-upper, .text-upper.text--mainfont, .text-upper.text--altfont {
@@ -2713,6 +2715,10 @@ html {
   font-weight: bold;
 }
 
+.text.light, .light.text--mainfont, .light.text--altfont {
+  font-weight: lighter;
+}
+
 .text.italic, .italic.text--mainfont, .italic.text--altfont {
   font-style: italic;
 }
@@ -2727,6 +2733,11 @@ html {
 
 .text.x1-3, .x1-3.text--mainfont, .x1-3.text--altfont, .header__brand {
   font-size: 1.3em;
+}
+
+.form__group {
+  width: 40%;
+  margin: 5em 5em 5em 5em;
 }
 
 .form__head {

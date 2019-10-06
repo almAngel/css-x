@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href = "https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" rel = "stylesheet"/>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -17,7 +18,7 @@
     <header class="header paper-wrapper">
         <div class="paper--light"></div>
         <span class="header__brand">
-            <a href="" class="text--altfont light text-left color-main">Pixcrate.<span class="symbol">®</span></a>
+            <a href="" class="text--altfont text-left color-main">Pixcrate.<span class="symbol">®</span></a>
         </span>
     </header>
     <div class="container-fluid paper-wrapper" style="padding-top: 4%; padding-bottom: 4%;">
@@ -39,14 +40,22 @@
         -->
 
         <div class="row no-gutters group--padded-2y">
-            <div class="col-xl-5"></div>
-            <div class="col-xl-2 col-sm-12">
+            <div class="col-xl-6">
+                <p class="text--altfont color-main heading margin-2">So, you didn't register yet...<span class="text--altfont dull">then sign up now!</span></p>
+                
+            </div>
+            <div class="col-xl-6 col-sm-12">
                 <form method="get" action="" class="form__group padded-1">
                     <span class="text--altfont form__head color-main">Register</span>
                     <div class="input-group">
-                        <span class="input-group__help text--altfont dull">Insert a valid username or email</span>
-                        <input type="text" class="input-group__input rounded" autocomplete="on">
-                        <span class="input-group__hint text--mainfont dull">eg: Example/ example@example.com</span>
+                            <span class="input-group__help text--altfont dull">Insert a valid username</span>
+                            <input type="text" class="input-group__input rounded" autocomplete="on">
+                            <span class="input-group__hint text--mainfont dull">eg: ExampleName123</span>
+                        </div>
+                    <div class="input-group">
+                        <span class="input-group__help text--altfont dull">Insert a valid email</span>
+                        <input type="email" class="input-group__input rounded" autocomplete="on">
+                        <span class="input-group__hint text--mainfont dull">eg: example@example.com</span>
                     </div>
                     <div class="input-group">
                         <span class="input-group__help text--altfont dull">Insert a valid password</span>
@@ -55,7 +64,6 @@
                     <input type="button" class="button--color-main glow rounded" value="Register">
                 </form>
             </div>
-            <div class="col-xl-5"></div>
         </div>
     </div>
     <footer class="footer paper-wrapper">

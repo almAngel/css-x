@@ -109,10 +109,14 @@
     @extend .text;
     font-family: $font_alt;
   }
-
+  &.margin-2 {
+    @include margin(2);
+  }
+  &.padded-1 {
+    @include padded(1);
+  }
   &.heading {
     font-size: 4em;
-    margin: 0;
   }
   &.text-left {
     @extend .text-left;
@@ -139,7 +143,7 @@
     font-weight: bold;
   }
   &.light {
-    @extend .text-weight-light;
+    font-weight: lighter;
   }
   &.italic {
     font-style: italic;
@@ -157,6 +161,8 @@
 
 .form {
   &__group {
+    width: 40%;
+    @include margin(5);
     @extend .group;
   }
   &__head {
